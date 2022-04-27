@@ -1,0 +1,255 @@
+*{box-sizing: border-box;}
+body,
+html{padding: 0; margin: 0;}
+body{
+  background: #ebebeb;
+  font-family: Arial;
+}
+p{
+  color: #000; font-size: 16px;
+  line-height: 22px;
+}
+a{color: #15c2a2; text-decoration: none;}
+
+
+
+h1{color: #333}
+/*-----------------------------
+header
+-----------------------------*/
+/*header{background: #fff; padding: 25px 15px 5px 15px;width: 100%;}
+.container{padding: 15px; max-width: 1300px; margin: 0 auto;}
+.logo{text-align: center; width: 100%; display: block; font-size: 30px}
+*/
+.header{background: #333;}
+.header__logo{color:#fff; float:left;display: block;padding:20px;text-decoration: none;}
+.header__logo span{font-size:10px; color: green;}
+.header__menu{float:right; margin:0; padding:20px;}
+.header__menu__item{display: inline-block; margin: 0 12px}
+.header__menu__item a{color:#fff; padding:20px;text-decoration: none; }
+
+#menu-principale{ text-align: center; }
+#menu-principale li{ display: inline; }
+#menu-principale li a{ margin: 10px;}
+
+
+/*-----------------------------
+Cover
+-----------------------------*/
+.cover{background: #654321; height: 50%;}
+.cover_image{width: 30%; float: right; height: 100%;
+  background-image: url("Image/paolo-merialdo.jpeg");
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+}
+.cover_copy{width: 70%; float: right; height: 100%;display: table;}
+.cover_copy_text{display: table-cell;vertical-align: middle;padding: 30px;}
+.cover_copy_text h3{font-size: 50px;margin-bottom: 0px; color:#fff;}
+.cover_copy_text h4{font-size: 29px;margin: 5px 0px;color: #fff;}
+.cover_copy_text a{color: #fff;}
+
+
+
+
+
+/*.img-res{
+  display:block;
+  margin:90px ;
+  width: 30%;
+  height: auto;
+  left: 100px;
+}
+
+.cover{
+  position: relative;
+  background: #fff;
+  margin: 120px;
+
+}
+.cover__content{
+  position: absolute;
+  left: 665px;
+  color: #fff;
+}
+*/
+/*COLORI GRADUALI
+.cover__content{
+  position:absolute;
+  bottom:0;
+  left:665;
+  width: 30%;
+  padding: 100px 20px 20px 20px;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg,rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 1)100%);
+
+}
+.cover__content a{color: #fff}
+*/
+
+/*-----------------------------
+Banner
+-----------------------------*/
+.banner{background: #fff; height: 70%;}
+.banner_image{width: 30%; float: left; height: 100%;
+  background-image: url("Image/Research.jpeg");
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+
+
+}
+.banner_copy{width: 70%; float: left; height: 100%;display: table;}
+.banner_copy_text{display: table-cell;vertical-align: middle;padding: 30px;}
+.banner_copy_text h3{font-size: 46px;margin-bottom: 0px;}
+.banner_copy_text h4{font-size: 22px;margin: 5px 0px;}
+.banner_copy_text a{color: #56b32e;}
+
+/*-----------------------------
+Banner1
+-----------------------------*/
+.banner1{background: #755c48; height: 65%;}
+
+.banner_copy1{width: 100%; float: center; height: 100%;display: table;}
+.banner_copy_text1{text-align: center;vertical-align:middle; padding: 1px;}
+.banner_copy_text1 h3{font-size: 39px;margin-bottom: 0px;color: #fff;}
+.banner_copy_text1 h4{font-size: 22px;margin: 5px 0px;color: #fff;}
+.banner_copy_text1 a{color: #b2ffff;}
+.banner_copy_text1 p,
+.banner_copy_text1 li{ center;color: #fff;}
+
+
+
+
+
+/*-----------------------------
+Cards
+-----------------------------*/
+
+.cards{ max-width: 1200px; margin: 150px auto;}
+.card{width: 30%; margin: 0 1.5%; background: #fff;float: left;}
+.card_copy{padding: 5px 20px;}
+.card_copy h3{margin-bottom: 0;}
+.img-card{width: 100%; height: auto;}
+
+
+nav {display: none;}
+div:hover nav{display: block;}
+.ricevimento{color: #b82b18;}
+
+
+
+
+
+
+/*-----------------------------
+Banner2
+-----------------------------*/
+.banner2{background: #755c48; height: 40%;}
+
+.banner_copy2{width: 100%; float: center; height: 100%;display: table;}
+.banner_copy_text2{text-align: center;vertical-align:middle; padding: 10px;}
+.banner_copy_text2 h3{font-size: 46px;margin-bottom: 0px;color: #fff;}
+.banner_copy_text2 h4{font-size: 32px;margin: 10px 0px;color: #fff;}
+.banner_copy_text2 a{color: #b2ffff;}
+.banner_copy_text2 p{ margin:30px; color: #fff;}
+
+
+
+.grid{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.col-50{
+  width: 50%;
+  padding: 15px;
+}
+
+
+
+
+
+
+
+footer{ background: #333; padding: 20px;}
+footer p{color: #fff}
+footer a{text-align: center;}
+
+
+@media(max-width 767px){
+  .col-50{
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/*-----------------------------
+Tablet
+-----------------------------*/
+@media (max-width: 998px){
+	/* banner */
+	.banner_image,
+	.banner_copy{width:50%;height:100%}
+
+  .banner_image1,
+  .banner_copy1{width:50%;height:100%}
+
+  .banner_image2,
+  .banner_copy2{width:50%;height:100%}
+
+}
+
+
+/*-----------------------------
+Smartphone
+-----------------------------*/
+@media (max-width: 767px){
+
+	/* Cover */
+	.cover{height:100%;}
+
+	/* Cards */
+	.card{width: 90%; margin:5%; }
+
+	/* Banner */
+	.banner{height: 600px;}
+	.banner_image,
+	.banner_copy{width:100%;height:50%}
+
+  .banner1{height: 600px;}
+	.banner_image1,
+	.banner_copy1{width:100%;height:50%}
+
+  .banner2{height: 600px;}
+  .banner_image2,
+  .banner_copy2{width:100%;height:50%}
+}
+
+
+
+
+
+/* clearfix */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
